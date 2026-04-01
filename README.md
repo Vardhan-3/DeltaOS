@@ -1,73 +1,64 @@
-# React + TypeScript + Vite
+# HR Nexus — AI-Powered HR Management SaaS
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+HR Nexus is a high-fidelity prototype of a modern, AI-integrated Human Resources Management system. Built for speed, scalability, and premium user experience, it demonstrates core HR workflows enhanced by simulated Gemini AI intelligence.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+### 1. Unified HR Dashboard
+- **Real-time KPIs:** Track active employees, open positions, and pending tickets at a glance.
+- **Data Visualization:** Interactive charts for department distribution and task status using Recharts.
+- **AI-Driven Insights:** Simulated Gemini-powered alerts for attrition risk and performance trends.
 
-## React Compiler
+### 2. Intelligent Recruitment
+- **Job Management:** Create and manage job postings with status tracking.
+- **AI Resume Screening:** Simulated AI analysis that matches candidate resumes against job descriptions, providing match scores and recommendations.
+- **Candidate Pipeline:** Visual dashboard for tracking applicants from screening to interview.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### 3. Employee Management
+- **Directory:** Searchable employee list with filtering by department and status.
+- **Rich Profiles:** Detailed employee views including contact info, role history, and assigned tasks.
+- **Onboarding:** Interactive checklists to ensure seamless transitions for new hires.
 
-## Expanding the ESLint configuration
+### 4. Payroll & Analytics
+- **Payroll Cycles:** Summary tables for managing salaries, bonuses, and net pay.
+- **Analytics:** Predictive analytics placeholders for workforce spending trends.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### 5. Task & Ticket Systems
+- **Kanban Task Board:** Visual workload management with drag-and-drop feel.
+- **Ticket Center:** Centralized issue tracking for resolving employee requests and internal HR tickets.
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 🛠 Tech Stack
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+- **Frontend:** React 18, TypeScript, Vite
+- **Styling:** TailwindCSS v4 (with custom glassmorphism components)
+- **Icons:** Lucide React
+- **Charts:** Recharts
+- **Routing:** React Router 7
+- **Persistence:** Reactive `localStorage` Store (for prototype speed)
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 📦 Getting Started
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### Prerequisites
+- Node.js (v18+)
+- npm or yarn
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+### Installation
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Vardhan-3/DeltaOS.git
+   cd DeltaOS
+   ```
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+3. Run the development server:
+   ```bash
+   npm run dev
+   ```
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 🧠 AI Simulation
+The "AI" features in this prototype (Resume Screening, Dashboard Insights) are currently simulated using logic that mimics the behavior of the **Google Gemini API**. This architecture is designed to be easily swapped with actual Google Cloud AI endpoints for production deployment.
+
+---
+Built with ❤️ by Antigravity for Vardhan-3.
