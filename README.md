@@ -5,16 +5,19 @@ HR Nexus is a high-fidelity prototype of a modern, AI-integrated Human Resources
 ## 🚀 Features
 
 ### 1. Unified HR Dashboard
+![Dashboard Overview](docs/screenshots/dashboard.png)
 - **Real-time KPIs:** Track active employees, open positions, and pending tickets at a glance.
 - **Data Visualization:** Interactive charts for department distribution and task status using Recharts.
 - **AI-Driven Insights:** Simulated Gemini-powered alerts for attrition risk and performance trends.
 
 ### 2. Intelligent Recruitment
+![Recruitment AI Scoring](docs/screenshots/recruitment.png)
 - **Job Management:** Create and manage job postings with status tracking.
 - **AI Resume Screening:** Simulated AI analysis that matches candidate resumes against job descriptions, providing match scores and recommendations.
 - **Candidate Pipeline:** Visual dashboard for tracking applicants from screening to interview.
 
 ### 3. Employee Management
+![Employee Management](docs/screenshots/employees.png)
 - **Directory:** Searchable employee list with filtering by department and status.
 - **Rich Profiles:** Detailed employee views including contact info, role history, and assigned tasks.
 - **Onboarding:** Interactive checklists to ensure seamless transitions for new hires.
