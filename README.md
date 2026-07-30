@@ -64,4 +64,4 @@ HR Nexus is a high-fidelity prototype of a modern, AI-integrated Human Resources
 The "AI" features in this prototype (Resume Screening, Dashboard Insights) are currently simulated using logic that mimics the behavior of the **Google Gemini API**. This architecture is designed to be easily swapped with actual Google Cloud AI endpoints for production deployment.
 
 ---
-Built with ❤️ by Antigravity for Vardhan-3.
+
